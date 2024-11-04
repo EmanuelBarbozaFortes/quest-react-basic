@@ -1,9 +1,9 @@
 
-import './Click.module.css'
+import styleButton from  './Click.module.css'
 export function Click(props) {
   return (
     <>
-      <button onClick={() => {
+      <button className={styleButton.botao} onClick={() => {
         alert('A label desse botão é Baixar CV')
       }}>{props.label}</button>
     </>
